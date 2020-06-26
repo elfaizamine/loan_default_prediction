@@ -1,0 +1,4 @@
+,Table,Row,Description,Special
+1,application_{train|test}.csv,SK_ID_CURR,ID of loan in our sample,
+2,application_{train|test}.csv,TARGET,"Target variable (1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample, 0 - all other cases)",
+5,application_{train|test}.csv,NAME_CONTRACT_TYPE,Identification if loan is cash or revolving,
