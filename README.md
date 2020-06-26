@@ -1,4 +1,4 @@
-project_name
+loan_default_risk
 ==============================
 
 This project is a kaggle Data Science competition where the goal is to predict the client that will fail to repay their loans
