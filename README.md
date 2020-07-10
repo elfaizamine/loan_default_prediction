@@ -2,6 +2,7 @@ loan_default_risk
 ==============================
 
 This project is a kaggle Data Science competition where the goal is to predict the client that will fail to repay their loans
+Kaggle Competition : https://www.kaggle.com/c/home-credit-default-risk
 
 Project Organization
 ------------
@@ -53,5 +54,3 @@ Project Organization
 
 
 --------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
