@@ -12,17 +12,16 @@ class ModelCreator:
     """
     def __init__(self, model=None, parameters=None):
         """
-        Create an empty model
+        create an empty model
 
         :param model: a Machine Learning Model, if None use RandomForest
         :param parameters: parameters that can be passed to the Model
         """
         if parameters is None:
             parameters = {
-                'max_depth': 20,
-                'n_estimators': 10,
-                'n_jobs': 3
-            }
+                'max_depth': 15,
+                'n_estimators': 200,
+                'n_jobs': 6}
         self.model_parameters = parameters
         if model is None:
             model = RandomForestClassifier(**self.model_parameters)
@@ -30,7 +29,7 @@ class ModelCreator:
 
     def save_model(self, filename):
         """
-        Save Model instance to a pickle
+        save Model instance to a pickle
 
         :param filename: filename
         """
@@ -41,7 +40,7 @@ class ModelCreator:
 
     def load_model(self, filename):
         """
-        Load a previously trained model
+        load a previously trained model
 
         :param filename: filename
         """
@@ -52,7 +51,7 @@ class ModelCreator:
 
     def train(self, x, y):
         """
-        Fit the classifier to the data
+        fit the classifier to the data
 
         :param x: a pandas dataframe or numpy array with the training set
         :param y: the labels for the classifier
@@ -62,7 +61,7 @@ class ModelCreator:
 
     def predict(self, x):
         """
-        Predict the probability of loan default for each client
+        predict the probability of loan default for each client
 
         :param x: a pandas dataframe with customers features
         :return: the predicted prob of default
