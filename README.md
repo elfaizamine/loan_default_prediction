@@ -7,45 +7,22 @@ https://www.kaggle.com/c/home-credit-default-risk
 Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Mabrrbkefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── main.py                             <- Script to run to clean data, generate features, train model, predict on test data and generate kaggle submission file
     │
-    ├── data
-    │   ├── clean          <- clean data that will be used in feature builder and model training
-    │   ├── prediction     <- submission csv  file to kaggle competition.
-    │   └── raw            <- The original data.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    │
-    │
-    └── src                                 <- Source code for use in this project.
+    ├── src                                 <- Source code for use in this project. (All important code is in this file)
     │   ├── __init__.py                     <- Makes src a Python module
     │   │
     │   ├── config                          
-    │   │   ├── Consts.py                   <- file contains feature, model training parameters, paths, ...
-    │   │   └── selectedFeatures.json       <- best selected features
+    │   │   ├── Consts.py                   <- File contains feature, model training parameters, paths, ...
+    │   │   └── selectedFeatures.json       <- Best selected features
     │   │
     │   ├── data                            
-    │   │   ├── DataLoader.py               <- load clean data to be processed by feature builder
-    │   │   └── RawDataCleaner.py           <- clean raw data and save files
+    │   │   ├── DataLoader.py               <- Load clean data to be processed by feature builder
+    │   │   └── RawDataCleaner.py           <- Clean raw data and save files
     │   │
-    │   ├── features                        
-    │   │   ├── feature files (...).py      <- each data table has a file that contains the features related to the table
-    │   |   └── features_selection          <- feature selection algorithms that saves the best optimal features in config
+    │   ├── features                        <- Features code 
+    │   │   ├── feature files (...).py      <- Each data table has a file that contains the features related to the table
+    │   |   └── features_selection          <- Feature selection algorithms that saves the best optimal features in config
     │   |       └── multiples files.py
     │   │
     │   ├── models                          
@@ -53,15 +30,32 @@ Project Organization
     │   │
     │   ├── utils                           
     │   │   ├── Evaluator.py                <- evaluate trained model bu calculating auc
-    │   │   └── utils.py                    <- functions that will be used across different features
+    │   │   └── utils.py                    <- Functions that will be used across different features
     |   |
     │   ├── visualization                   
     │   |   └── visualize.py                <- Scripts to create exploratory and results oriented visualizations
     |   |
     │   └── FeatureBuilder                  <- Scripts that create master table (features plus application ID)
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
+    ├── data_sample                         <- Only one row of data is used
+    │   ├── clean                           <- Clean data that will be used in feature builder and model training
+    │   ├── prediction                      <- Submission csv  file to kaggle competition.
+    │   └── raw                             <- The original data.
+    │
+    ├── notebooks                           <- Jupyter notebooks
+    │
+    ├── models                              <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── reports                             <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures                         <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt                    <- The requirements file for reproducing the analysis environment
+    │
+    ├── Makefile                            <- Makefile with commands like `make data` or `make train`
+    │
+    ├── README.md                           <- The top-level README for developers using this project.
+    │
+    └── LICENSE
 
 --------
 
