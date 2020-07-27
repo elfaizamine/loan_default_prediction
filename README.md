@@ -2,9 +2,11 @@ Loan Default Risk
 ==============================
 
 This project is a kaggle Data Science competition where the goal is to predict if a client will succeed or fail in repaying their loans : 
-https://www.kaggle.com/c/home-credit-default-risk
+https://www.kaggle.com/c/home-credit-default-risk.
 
-To download data, you must enter the competition and go to https://www.kaggle.com/c/home-credit-default-risk/data
+To download data, you must enter the competition and go to https://www.kaggle.com/c/home-credit-default-risk/data.
+
+With this version of Project, current kaggle score is 0.7422
 
 Project Organization
 ------------
