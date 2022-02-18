@@ -8,10 +8,16 @@ To download data, you must enter the competition and go to https://www.kaggle.co
 
 With this version of Project, current kaggle score is 0.7422
 
+The role of this repository is to showcase a useful structure for supervised learning projects and need further feature enriching.
+
+
+
 Project Organization
 ------------
 
     ├── main.py                             <- Script to run to clean data, generate features, train model, predict on test data and generate kaggle submission file
+    │
+    ├── Feature_selection.ipynb             <- Feature selection notebook that compares between boruta algorithm and genetic algorithm.
     │
     ├── src                                 <- Source code for use in this project. (All important code is in this file)
     │   ├── __init__.py                     <- Makes src a Python module
@@ -62,5 +68,3 @@ Project Organization
     └── LICENSE
 
 --------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
